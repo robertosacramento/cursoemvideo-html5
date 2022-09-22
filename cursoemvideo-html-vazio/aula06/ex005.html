@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+
+            background-color: rgb(236, 95, 0);
+            color: rgb(233, 218, 218);
+            font: normal 18pt Arial;
+        }
+            /*estas são as 3 configurações básicas do css*/
+
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <!--<div id = 'msg'>Clique só em mim</div>-->
+    <!--<div name = 'msg'>Clique só em mim</div>-->
+    <!--<div class = 'msg'>Clique só em mim</div>-->
+     <div class = 'msg'>Clique só em mim</div>
+
+
+
+
+    <script>
+        //window.document.write('Olá mundo!');
+        //por JS, por DOM eu fui adcionando componentes
+        //esta não é a melhor maneira de adcionar componentes, mas é a mais simples
+        //posso mostrar na tela coisas como
+        //window.document.write(window.document.charset);
+        // podemos mostrar o navegador
+       // window.document.write(window.navigator.appName)
+       //podemos mostrar a URL
+       
+       //window.document.write(window.document.URL)
+       //através do DOM, dentro do JS nós podemos ter acesso a diversos componentes
+       var corpo = window.document.body 
+       var p1 = window.document.getElementsByTagName('p')[1]
+       //document.write(p1.innerHTML)
+       //window.alert(p1.innerText)
+       // window.document.write(p1.innerText)
+        //posso escrever tambem
+       // window.document.write('Esta escrito assim: ' + p1.innerText)
+         corpo.style.background = 'red'
+       p1.style.color = 'black'
+        /*
+       var d = window.document.getElementById('msg')
+       d.style.background = 'blue'
+       d.innerText = 'Eu estou cagando'
+       */
+        //window.document.getElementById('msg').innerText = 'Não sô, só peitano.'
+
+        //var d = window.document.getElementsByName('msg')[0]
+       // d.innerText = 'Peidorreiro'
+
+        //var d = window.document.getElementsByClassName('msg')[0]
+       // d.innerText = 'Há, tá!'
+
+       var d = window.document.querySelector("div.msg")
+       d.style.background = 'black'
+
+
+
+
+
+    </script>
+</body>
+</html>

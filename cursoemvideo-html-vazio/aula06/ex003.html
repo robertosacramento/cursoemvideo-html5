@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>003 </title>
+    <style>
+        body {
+            background-color: aqua; /*comentário*/
+            color: white;
+            font: normal 25pt arial;
+        }
+
+    </style>
+</head> 
+<body>
+   <h1>Olá, ex003-1107.html!</h1> <!--comentário-->
+   <p>Já me livrei da maldição</p>
+    <script>
+           //vou criar 2 variáveis
+          // var n1 = window.prompt("Digite um número.")
+           //var n2 = window.prompt("Digite outro número.")
+           //var soma = n1 + n2
+           //window.alert("A soma dos valores é " + soma);
+           //desse jeito vai aparecer um número e depois do outro
+           //não vai ser a soma
+           //por o sinal de + serve para 2 coisas diferentes
+           // pode ser para adição - number+number
+           // pode ser para concatenação - String+String
+           // e agora o mais importante
+           //window.prompt("") S E M P R E retorna uma String
+           //independete de se ter digitado número ou String
+           //assim o JavaScript fica confuso
+           /*então como eu faço para forçar para que 
+           n1 e n2 sejam números? */
+           /* relembrando, o JavaScritp agi assim;
+              se for number + number o JS faz adição
+              se form String + String o JS faz concatenação*/
+            /*temos de coloclar antes do window.prompt("Digite um número");
+            o Number.parseInt(window.prompt("Digite um número")) - p/ nº inteiro
+            e Number.parseFloat(window.prompt("Digie um número")) - p/ nº real*/
+            //fica assim para número real
+            var n1 = Number.parseFloat(window.prompt("Digite um número."))
+           var n2 = Number.parseFloat(window.prompt("Digite outro número."))
+           var soma = n1 + n2
+          // window.alert("A soma dos valores é " + soma);
+           //vamos reescrever o window.alert acima usando $ (placeroad)
+            // A T E N Ç Ã O - com $ usamos crase e não aspas
+            window.alert(`A soma dos valores é ${soma}`)
+    </script>
+    
+</body>
+</html>
